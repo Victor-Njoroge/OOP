@@ -10,14 +10,14 @@ if __name__ == "__main__":
     rating = int(input("Enter Rating (1 to 5): "))
     person.add_review(restaurant_name, rating)
 
-    print("Customer Reviews:")
-    for review in person.get_reviews():
-        print(f"Restaurant: {review.restaurant_name()}, Rating: {review.rating()}")
+    # Write reviews to a file
+    with open("reviews.txt", "a") as file:
+        for review in person.get_reviews():
+            file.write(f"Customer: {person.fullName()}, Restaurant: {review.restaurant_name()}, Rating: {review.rating()}\n")
+
+    print("Review has been stored in the 'reviews.txt' file.")
 
     restaurant_instance = Restaurants.get_or_create(restaurant_name)
     print("Restaurant Reviews:")
     for review in restaurant_instance.reviews():
-        print(f"Customer: {person.get_cusName()} {person.get_famName()} Rating: {review.rating()}")
-
-        print(f"Given Name: {person.get_cusName()}")
-        print(f"Family Name: {person.get_famName()}")
+        print(f"Customer: {person.fullName()}, Rating: {review.rating()}")

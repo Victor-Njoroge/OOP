@@ -1,0 +1,2 @@
+Customer: Victor Muniu, Restaurant: Pronto, Rating: 4
+Customer: Lionel Kasembeli, Restaurant: Pronto, Rating: 5
