@@ -1,6 +1,5 @@
 from customer import Customers
 from restaurant import Restaurants
-from review import Review
 
 if __name__ == "__main__":
     cusFirstName = input("Enter First Name: ")
@@ -18,4 +17,7 @@ if __name__ == "__main__":
     restaurant_instance = Restaurants.get_or_create(restaurant_name)
     print("Restaurant Reviews:")
     for review in restaurant_instance.reviews():
-        print(f"Customer: {review.customer_name()}, Rating: {review.rating()}")
+        print(f"Customer: {person.get_cusName()} {person.get_famName()} Rating: {review.rating()}")
+
+        print(f"Given Name: {person.get_cusName()}")
+        print(f"Family Name: {person.get_famName()}")
