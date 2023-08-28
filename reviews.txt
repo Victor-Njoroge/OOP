@@ -1,2 +1,4 @@
 Customer: Victor Muniu, Restaurant: Pronto, Rating: 4
 Customer: Lionel Kasembeli, Restaurant: Pronto, Rating: 5
+Customer: Joy Ann, Restaurant: Pronto, Rating: 4
+Customer: Ian Ndungu, Restaurant: Pepino's, Rating: 4
